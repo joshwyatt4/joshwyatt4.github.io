@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    box-shadow: 5px 5px 5px #555;
+    border-radius: 50%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    margin-top: 500px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+footer {
+    text-align: left;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-top: auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    .main-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    a {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+}
