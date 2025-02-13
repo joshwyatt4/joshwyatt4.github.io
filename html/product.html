@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/styles3.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="flame logo" width="50" height="50">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="product.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Products</h2>
+        <section class="products-page">
+            <aside class="filter-sidebar">
+                <h3>Filter Products</h3>
+                <form action="#" method="get">
+                    <label for="price">Price</label>
+                    <select id="price" name="price">
+                        <option value="low-high">Low to High</option>
+                        <option value="high-low">High to Low</option>
+                        <option value="under-50">$0 - $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100-200">$100 - $200</option>
+                    </select>
+
+                    <label for="model">Model</label>
+                    <select id="model" name="model">
+                        <option value="all">All Models</option>
+                        <option value="model-1">T</option>
+                        <option value="model-2">C</option>
+                        <option value="model-3">CP</option>
+                        <option value="model-4">B</option>
+                    </select>
+
+                    <button type="submit">Apply Filters</button>
+                </form>
+            </aside>
+
+            <div class="product-gallery">
+                <div class="product-item">
+                    <img src="../images/ball1.jpg" alt="Titleist Ball">
+                    <p class="product-description">Titleist Golf Ball.</p>
+                </div>
+                <div class="product-item">
+                    <img src="../images/ball2.jpg" alt="Callaway Ball">
+                    <p class="product-description">Callaway Golf Ball.</p>
+                </div>
+                <div class="product-item">
+                    <img src="../images/ball3.jpg" alt="CP3O Ball">
+                    <p class="product-description">CP3O Golf Ball.</p>
+                </div>
+                <div class="product-item">
+                    <img src="../images/ball4.jpg" alt="Bullet Golf Ball">
+                    <p class="product-description">Bullet Golf, Golf Ball.</p>
+                </div>
+            </div>
+
+            <section class="product-table">
+                <h3>Product Table</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Model</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Titleist Ball</td>
+                            <td>Golf</td>
+                            <td>$5 per</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>Callaway Ball</td>
+                            <td>Golf</td>
+                            <td>$3 per</td>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>CP3O Ball</td>
+                            <td>Golf</td>
+                            <td>$1 per</td>
+                            <td>CP</td>
+                        </tr>
+                        <tr>
+                            <td>Bullet Golf Ball</td>
+                            <td>Toys</td>
+                            <td>$1 per</td>
+                            <td>B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <footer>&copy; 2025</footer>
+</body>
+</html>
